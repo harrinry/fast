@@ -6,7 +6,7 @@ import {
     FoundationElementDefinition,
 } from "@microsoft/fast-foundation";
 import { SystemColors } from "@microsoft/fast-web-utilities";
-// import { elevationShadowFlyout } from "../styles/index";
+import { elevationShadowFlyout } from "../styles/index";
 import {
     controlCornerRadius,
     designUnit,
@@ -33,7 +33,7 @@ export const menuStyles: (
             background: ${fillColor};
             border: calc(${strokeWidth} * 1px) solid transparent;
             border-radius: ${layerCornerRadius};
-            /*box-shadow: $elevationShadowFlyout};*/
+            box-shadow: ${elevationShadowFlyout};
             margin: 0;
             border-radius: calc(${controlCornerRadius} * 1px);
             padding: calc(${designUnit} * 1px) 0;
