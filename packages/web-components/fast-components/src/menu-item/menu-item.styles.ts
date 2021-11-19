@@ -194,6 +194,7 @@ export const menuItemStyles: (
             css`
                 :host,
                 ::slotted([slot='end']:not(svg)) {
+                    background: ${SystemColors.ButtonFace};
                     border-color: ${SystemColors.ButtonFace};
                     color: ${SystemColors.ButtonText};
                     fill: ${SystemColors.ButtonText};
@@ -202,7 +203,8 @@ export const menuItemStyles: (
                 :host(:not([disabled]):hover) ::slotted([slot='end']:not(svg)),
                 :host(:not([disabled]):${focusVisible}) ::slotted([slot='end']:not(svg)),
                 :host(:${focusVisible}),
-                :host(.expanded) {
+                :host(.expanded),
+                :host(.expanded) ::slotted([slot="end"]:not(svg)) {
                     forced-color-adjust: none;
                     background: ${SystemColors.Highlight};
                     border-color: ${SystemColors.Highlight};
